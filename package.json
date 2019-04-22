@@ -1,0 +1,29 @@
+{
+    "name": "formybabu",
+    "version": "1.0.0",
+    "description": "For My Babu",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js"
+    },
+    "dependencies": {
+        "ejs": "2.6.1",
+        "express": "4.16.4",
+        "zero-fill": "2.2.3",
+        "mongodb": "3.1.10",
+        "body-parser": "1.18.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/akshayanandraut/formybabu.git"
+    },
+    "keywords": [
+        "babu"
+    ],
+    "author": "Akshyanand Raut",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/akshayanandraut/formybabu/issues"
+    },
+    "homepage": "https://github.com/akshayanandraut/formybabu#readme"
+}

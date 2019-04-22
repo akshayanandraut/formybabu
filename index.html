@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>for my Babu</title>
+  <script src="lib/typed.js" type="text/javascript"></script>
+  <script src="assets/demos.js"></script>
+  <link href="assets/demos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body>
+
+  <div class="wrap">
+    <h1 class="title">Babu...</h1>
+
+    <div class="links">
+      PILLU LOVES YOU... <em><b><span id="typed2"></span></b></em>
+    </div>
+  </div>
+  <div class="type-wrap container-fluid">
+    <span id="typed3"></span>
+  </div>
+
+  <pre>
+  </pre>
+  <script>
+    var strings;
+    var content;
+
+    var stringsXHttp = new XMLHttpRequest();
+    stringsXHttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        //document.getElementById("").innerHTML = this.responseText;
+        //strings = responseText.short;
+        console.log(responseText)
+        console.log(strings)
+      }
+    };
+    //stringsXHttp.open("GET", "formybabu.herokuapp.com", true);
+    stringsXHttp.open("GET", "localhost:8080/short", true);
+    stringsXHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+
+
+    var typed2 = new Typed('#typed2', {
+      // strings: ["a lot^1000",
+      //   "he always did^1000",
+      //   "he does", "he always will^1000",
+      //   "and wants to marry you^1000",
+      //   "and wants to be in your arms ^2000 always^1000",
+      //   "and wants to enjoy life with you^1000",
+      //   "and wants to have cute little angels with you^1000",
+      //   "and wants to stay with you forever^1000",
+      //   "and just everything you can ever imagine,^1000 he wants to do that with you^1000",
+      //   "and just everything you can ever imagine, he wants to do that for you^1000",
+      //   "and he is because of you^1000",
+      //   "thanks for loving him back too^1000",
+      //   "he misses you a lot when you don't talk^1000",
+      //   "just marry him^1000",
+      //   "because he really loves you^1000"
+      // ],
+      strings: strings,
+      typeSpeed: 75,
+      backSpeed: 50,
+      smartBackspace: true, // this is a default
+      loop: true
+    });
+
+
+    var content = [
+      "I don't know what to say to you^100.^100.^100.^100 ^2000<strong>I^400 L^200O^200V^200E ^200Y^200O^200U^2000 </strong><em>a lot ^200!^200!^200! </em>^2000I just don't know what to say to you^1000,<br> `<h6>I LOVE YOU</h6>` ^500 <br/> `<h5>I LOVE YOU</h5>` ^500 <br/> `<h4>I LOVE YOU</h4>` ^500 <br/> `<h3>I LOVE YOU</h3>` ^500 <br/> `<h2>I LOVE YOU</h2>` ^500 <br/> `<h1>I LOVE YOU</h1>` ",
+      "I don't know what to say to you... <strong>I LOVE YOU </strong><em>a lot !!! </em>I just don't know what to say to you,<br> (Sorry te delete kela.^200.^200. Jaaga kami ahe ^300 :p)",
+      "I don't know what to say to you... <strong>I LOVE YOU </strong><em>a lot !!! </em>I just don't know what to say to you,<br> But I really love you a lot. I don't have any words to describe it ^200.^200.^200. <br/> Babu, whenever I just get angry on you, it doesn't make me happy. I know you don't like it either, but I feel lonely when you say or do some things. ^2000 They really hurt a lot^3000 <br /> I am really glad that we are together because I've never really been this happy before.^2000 You are the reason for my happiness.^1000 I am really thankful for that.^1500 I really am.^1000 I just don't know what all to do for you to compensate for how much you love me. ^5000",
+      "T^200h^200a^200n^200k^200 y^200o^200u^200 ^2000 for everything",
+      "I really miss you a lot when you are away from me^2000",
+      "I really ^1000 have a lot to talk about now, but I think this should be enough for now. I don't want you stare at the screen now.^200.^200.^200.^200.^200.^200.^200.",
+      "Please understand how I feel when you are away from me even for a moment.^2500",
+      "I have always tried to be a persn you'd love.^2000 always and forever.^1000",
+      "I have always tried to be a persn you'd love. And I am glad that you love me more than I deserve.^3000",
+      "So, thank you babu, ^2000 for everything^4000.",
+      "^200I ^200L^200O^200V^200E ^200Y^200O^200U ^200more ^200and ^200more ^200always ^200and ^200forever",
+      "All I want you to always remember is that, I will always love you.^3000 No matter what^2000!",
+      "Thank^500 you ^500 for^500 being^500 in my ^500life^2000",
+      "Thank you for being ^1000my life",
+      "^200L^200O^200V^200E^200 ^200YOU^200 ^200:^200)^200000"
+    ];
+
+
+
+    var typed3 = new Typed('#typed3', {
+      strings: content,
+      typeSpeed: 75,
+      backSpeed: 40,
+      smartBackspace: true, // this is a default
+      loop: false
+    });
+  </script>
+</body>
+
+</html>
