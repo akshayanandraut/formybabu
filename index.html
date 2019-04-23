@@ -37,13 +37,13 @@
     stringsXHttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         //document.getElementById("").innerHTML = this.responseText;
-        //strings = responseText.short;
+        strings = responseText.short;
         console.log(responseText)
         console.log(strings)
       }
     };
     //stringsXHttp.open("GET", "formybabu.herokuapp.com", true);
-    stringsXHttp.open("GET", "localhost:8080/short", true);
+    stringsXHttp.open("GET", "https://formybabu.herokuapp.com/short", true);
     stringsXHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
 
